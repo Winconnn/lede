@@ -832,6 +832,8 @@ jobs:
           CONFIG_PACKAGE_kmod-mlx4-core=y
           CONFIG_PACKAGE_kmod-mlx5-core=y
           CONFIG_PACKAGE_kmod-pcnet32=y
+          CONFIG_PACKAGE_kmod-r8125=y
+          CONFIG_PACKAGE_kmod-r8168=y
           CONFIG_PACKAGE_kmod-tg3=y
           CONFIG_PACKAGE_kmod-tulip=y
           CONFIG_PACKAGE_kmod-via-velocity=y
@@ -1062,10 +1064,14 @@ jobs:
           CONFIG_PACKAGE_luci-app-vsftpd=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wol=y
+          CONFIG_PACKAGE_luci-theme-argon=y
+          CONFIG_PACKAGE_luci-theme-argon-mod=y
           CONFIG_PACKAGE_luci-theme-bootstrap=y
           CONFIG_PACKAGE_luci-theme-design=y
+          CONFIG_PACKAGE_luci-theme-material=y
           CONFIG_PACKAGE_luci-proto-bonding=y
           CONFIG_PACKAGE_luci-proto-ppp=y
+          CONFIG_PACKAGE_luci-proto-wireguard=y
           CONFIG_PACKAGE_luci-lib-ip=y
           CONFIG_PACKAGE_luci-lib-jsonc=y
           CONFIG_PACKAGE_luci-lib-nixio=y
@@ -1114,6 +1120,7 @@ jobs:
           CONFIG_PACKAGE_wsdd2=y
           CONFIG_PACKAGE_ip-full=y
           CONFIG_PACKAGE_openssh-sftp-server=y
+          CONFIG_PACKAGE_wireguard-tools=y
           CONFIG_PACKAGE_shadowsocks-libev-config is not set
           CONFIG_PACKAGE_shadowsocks-libev-ss-local is not set
           CONFIG_PACKAGE_shadowsocks-libev-ss-redir is not set
