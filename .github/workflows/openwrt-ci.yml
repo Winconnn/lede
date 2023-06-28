@@ -72,7 +72,6 @@ jobs:
         run: |
           rm -f ./.config*
           touch ./.config
-          [ -e files ] && mv files openwrt/files
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
           make defconfig
 
