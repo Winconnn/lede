@@ -1053,7 +1053,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui=y
           CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
           CONFIG_PACKAGE_luci-app-samba4=y
-          CONFIG_PACKAGE_luci-app-shadowsocks-libev is not set
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-turboacc=y
           CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM=y
@@ -1121,13 +1120,6 @@ jobs:
           CONFIG_PACKAGE_ip-full=y
           CONFIG_PACKAGE_openssh-sftp-server=y
           CONFIG_PACKAGE_wireguard-tools=y
-          CONFIG_PACKAGE_shadowsocks-libev-config is not set
-          CONFIG_PACKAGE_shadowsocks-libev-ss-local is not set
-          CONFIG_PACKAGE_shadowsocks-libev-ss-redir is not set
-          CONFIG_PACKAGE_shadowsocks-libev-ss-rules is not set
-          CONFIG_PACKAGE_shadowsocks-libev-ss-server is not set
-          CONFIG_PACKAGE_shadowsocks-libev-ss-tunnel is not set
-          CONFIG_PACKAGE_sockd is not set
           CONFIG_PACKAGE_uhttpd=y
           CONFIG_PACKAGE_uhttpd-mod-ubus=y
           CONFIG_PACKAGE_etherwake=y
