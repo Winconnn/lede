@@ -1,3 +1,4 @@
+# 
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 # Copyright (C) 2019 P3TERX
@@ -6,19 +7,12 @@
 #
 name: OpenWrt-CI
 
-
 on:
-  push:
-    branches: 
-      - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  release:
-    types: [published]
+  schedule:
+    - cron: 0 20 * * *
 
 permissions:
   contents: read
-  
 
 jobs:
 
@@ -129,8 +123,8 @@ jobs:
           CONFIG_DEFAULT_kmod-button-hotplug=y
           # CONFIG_DEFAULT_kmod-drm-amdgpu is not set
           CONFIG_DEFAULT_kmod-drm-i915=y
-          # CONFIG_DEFAULT_kmod-e1000 is not set
-          # CONFIG_DEFAULT_kmod-e1000e is not set
+          CONFIG_DEFAULT_kmod-e1000=y
+          CONFIG_DEFAULT_kmod-e1000e=y
           CONFIG_DEFAULT_kmod-forcedeth=y
           CONFIG_DEFAULT_kmod-fs-f2fs=y
           CONFIG_DEFAULT_kmod-fs-vfat=y
@@ -2597,8 +2591,8 @@ jobs:
           # CONFIG_PACKAGE_kmod-dm9000 is not set
           CONFIG_PACKAGE_kmod-dummy=y
           # CONFIG_PACKAGE_kmod-e100 is not set
-          # CONFIG_PACKAGE_kmod-e1000 is not set
-          # CONFIG_PACKAGE_kmod-e1000e is not set
+          CONFIG_PACKAGE_kmod-e1000=y
+          CONFIG_PACKAGE_kmod-e1000e=y
           # CONFIG_PACKAGE_kmod-et131x is not set
           # CONFIG_PACKAGE_kmod-ethoc is not set
           # CONFIG_PACKAGE_kmod-fixed-phy is not set
@@ -7249,6 +7243,7 @@ jobs:
 
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+
       - name: Download packages
         run: make download -j16
 
